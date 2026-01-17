@@ -11,10 +11,10 @@ $authController = new AuthController();
 
 /* ROUTES avec un simple tableau */
 $routes = [
-    'GET' => [
-        '/'           => [$authController, 'showLogin'],
-        '/register'   => [$authController, 'showRegister']
-    ],
+    // 'GET' => [
+    //     '/'           => [$authController, 'showLogin'],
+    //     '/register'   => [$authController, 'showRegister']
+    // ],
     'POST' => [
         '/login'      => [$authController, 'login'],
         '/register'   => [$authController, 'register']
