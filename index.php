@@ -9,7 +9,7 @@ use App\Controllers\AuthController;
 /* Instancier le Controller */
 $authController = new AuthController();
 
-/* ROUTES avec un simple tableau */ 
+/* ROUTES avec un simple tableau */
 $routes = [
     'GET' => [
         '/'           => [$authController, 'showLogin'],
