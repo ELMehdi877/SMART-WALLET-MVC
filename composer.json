@@ -1,0 +1,15 @@
+{
+    "name": "safiy/smart_wallet_mvc",
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lahrach el mehdi",
+            "email": "lahrachelmehdi2025@gmail.com"
+        }
+    ],
+    "require": {}
+}
