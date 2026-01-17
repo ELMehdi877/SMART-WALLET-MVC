@@ -11,7 +11,7 @@ class UserService {
         $this->userRepo = $userRepo; 
     }
 
-    // update profil service
+    // service save user
     public function signUpUserService() : string {
         if ($this->userRepo->find()) {
             return "ce Email existe déja";
@@ -22,10 +22,19 @@ class UserService {
         }
     }
 
-    // service save user
-    public function loginUserService() : ?string{
+    // service login user
+    public function loginUserService($password) : ?string{
         if (!$this->userRepo->find()) {
             return "ce commpte n'existe pas";
+        }
+        else {
+            $user = $this->userRepo->find();
+            if (password_verify($password , $user["password"])) {
+                return null;
+            }
+            else {
+                return "mode de passe incorrect";
+            }
         }
 
         return null;

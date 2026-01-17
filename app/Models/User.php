@@ -13,7 +13,7 @@ class User{
     public function __construct(string $fullname,string $email,string $password){
         $this->fullname = $fullname;
         $this->email = $email;
-        $this->password = $password;
+        $this->password = password_hash($password,PASSWORD_DEFAULT);
     }
 
     // Getters
