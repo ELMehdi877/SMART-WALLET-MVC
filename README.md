@@ -75,44 +75,44 @@ L’application respecte une architecture **MVC claire**, avec une séparation s
 
 smart-wallet/
 ├── app/
-│ ├── controllers/
-│ │ ├── AuthController.php
-│ │ ├── IncomeController.php
-│ │ ├── ExpenseController.php
-│ │ ├── CategoryController.php
-│ │ └── DashboardController.php
-│ │
-│ ├── models/
-│ │ ├── User.php
-│ │ ├── Income.php
-│ │ ├── Expense.php
-│ │ └── Category.php
-│ │
-│ ├── views/
-│ │ ├── layouts/
-│ │ │ ├── header.php
-│ │ │ └── footer.php
-│ │ ├── auth/
-│ │ ├── incomes/
-│ │ ├── expenses/
-│ │ ├── categories/
-│ │ └── dashboard/
-│ │
-│ └── core/
-│ ├── App.php
-│ ├── Controller.php
-│ ├── Model.php
-│ └── Database.php
+│   ├── controllers/
+│   │   ├── AuthController.php
+│   │   ├── IncomeController.php
+│   │   ├── ExpenseController.php
+│   │   ├── CategoryController.php
+│   │   └── DashboardController.php
+│   │
+│   ├── models/
+│   │   ├── User.php
+│   │   ├── Income.php
+│   │   ├── Expense.php
+│   │   └── Category.php
+│   │
+│   ├── views/
+│   │   ├── layouts/
+│   │   │   ├── header.php
+│   │   │   └── footer.php
+│   │   ├── auth/
+│   │   ├── incomes/
+│   │   ├── expenses/
+│   │   ├── categories/
+│   │   └── dashboard/
+│   │
+│   └── core/
+│       ├── App.php
+│       ├── Controller.php
+│       ├── Model.php
+│       └── Database.php
 │
 ├── public/
-│ ├── .htaccess
-│ └── index.php
+│   ├── .htaccess
+│   └── index.php
 │
 ├── config/
-│ └── config.php
+│   └── config.php
 │
 ├── database/
-│ └── database.sql
+│   └── database.sql
 │
 └── README.md
 
