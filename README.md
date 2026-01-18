@@ -74,7 +74,6 @@ L’application respecte une architecture **MVC claire**, avec une séparation s
 ### 📂 Structure du projet
 
 smart-wallet/
-│
 ├── app/
 │ ├── controllers/
 │ │ ├── AuthController.php
