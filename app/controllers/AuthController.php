@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controllers;
 
 use App\Models\User;
@@ -11,13 +10,13 @@ class AuthController
     // afficher formulaire login
     public function showLogin()
     {
-        require __DIR__ . "/../views/login.php";
+        require __DIR__ . "/../views/authentification.php";
     }
 
     // afficher formulaire register
     public function showRegister()
     {
-        require __DIR__ . "/../views/register.php";
+        require __DIR__ . "/../views/authentification.php";
     }
 
     // traiter l'inscription
@@ -58,6 +57,7 @@ class AuthController
         if ($error === null) {
             echo "Login réussi ✅";
         } else {
+            require __DIR__ . "/../views/authentification.php";
             echo $error;
         }
     }

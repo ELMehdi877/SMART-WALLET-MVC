@@ -1,5 +1,6 @@
 -- Active: 1768312369187@@127.0.0.1@5432@smart_wallet
 
+
 CREATE DATABASE smart_wallet;
 
 DROP DATABASE IF EXISTS smart_wallet WITH (FORCE);
@@ -46,3 +47,5 @@ CREATE TABLE if not exists expenses(
     date DATE DEFAULT CURRENT_DATE,
     created_at DATE DEFAULT CURRENT_DATE
 );
+
+INSERT INTO users(fullname,email,password) VALUES ("mehdi","mehdi@","123");

@@ -10,12 +10,10 @@ class Database
     {
         try {
             return new PDO(
-                "mysql:host=localhost;dbname=test;charset=utf8",
-                "root",
-                ""
+                "pgsql:host=localhost;port=5432;dbname=test;user=postgres;password=Mehdi877"
             );
         } catch (PDOException $e) {
-            echo "Erreur connexion DB";
+            echo "Erreur connexion DB : " . $e->getMessage();
             exit;
         }
     }
