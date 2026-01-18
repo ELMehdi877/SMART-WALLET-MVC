@@ -73,6 +73,9 @@ L’application respecte une architecture **MVC claire**, avec une séparation s
 
 ### 📂 Structure du projet
 
+<!-- ligne vide obligatoire -->
+
+~~~
 smart-wallet/
 ├── app/
 │   ├── controllers/
@@ -115,6 +118,8 @@ smart-wallet/
 │   └── database.sql
 │
 └── README.md
+~~~
+
 
 
 ---
