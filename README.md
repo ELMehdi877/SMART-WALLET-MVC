@@ -117,8 +117,6 @@ smart-wallet/
 │
 └── README.md
 
-markdown
-Copy code
 
 ---
 
